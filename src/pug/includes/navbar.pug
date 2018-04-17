@@ -1,20 +1,25 @@
 // Navigation
-nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-default.fixed-top
     a.navbar-brand(href='index.html') FinA Business Analytics
     button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
     #navbarResponsive.collapse.navbar-collapse
         ul#exampleAccordion.navbar-nav.navbar-sidenav
-            li.nav-item(data-toggle='tooltip', data-placement='right', title='Dashboard')
+            li.nav-item(data-toggle='tooltip', data-placement='right', title='About Us')
                 a.nav-link(href='index.html')
-                    i.fa.fa-fw.fa-ambulance
+                    i.fa.fa-fw.fa-info
                     span.nav-link-text
-                        | &nbsp;Menu 1
-            li.nav-item(data-toggle='tooltip', data-placement='right', title='Charts')
+                        | &nbsp;About Us
+            li.nav-item(data-toggle='tooltip', data-placement='right', title='Services')
                 a.nav-link(href='index.html')
-                    i.fa.fa-fw.fa-ambulance
+                    i.fa.fa-fw.fa-cog
                     span.nav-link-text
-                        | &nbsp; Menu 2
+                        | &nbsp; Services
+            li.nav-item(data-toggle='tooltip', data-placement='right', title='Contact Us')
+                a.nav-link(href='index.html')
+                    i.fa.fa-fw.fa-phone
+                    span.nav-link-text
+                        | &nbsp; Contact Us
         ul.navbar-nav.sidenav-toggler
             li.nav-item
                 a#sidenavToggler.nav-link.text-center
@@ -22,5 +27,5 @@ nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
         ul.navbar-nav.ml-auto
             li.nav-item
                 a.nav-link(data-toggle='modal', data-target='#exampleModal')
-                    i.fa.fa-fw.fa-sign-out
-                    | Logout
+                    i.fa.fa-fw.fa-comment-o
+                    | &nbsp; support

@@ -20,6 +20,7 @@ const banner = ['/*!\n',
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function () {
+
     // Bootstrap
     gulp.src([
         './node_modules/bootstrap/dist/**/*',
@@ -27,11 +28,13 @@ gulp.task('vendor', function () {
         '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
     ])
         .pipe(gulp.dest('./vendor/bootstrap'));
+
     // ChartJS
     gulp.src([
         './node_modules/chart.js/dist/*.js'
     ])
         .pipe(gulp.dest('./vendor/chart.js'));
+
     // DataTables
     gulp.src([
         './node_modules/datatables.net/js/*.js',
@@ -39,6 +42,7 @@ gulp.task('vendor', function () {
         './node_modules/datatables.net-bs4/css/*.css'
     ])
         .pipe(gulp.dest('./vendor/datatables/'));
+
     // Font Awesome
     gulp.src([
         './node_modules/font-awesome/**/*',
@@ -48,17 +52,31 @@ gulp.task('vendor', function () {
         '!./node_modules/font-awesome/*.{txt,json,md}'
     ])
         .pipe(gulp.dest('./vendor/font-awesome'));
+
     // jQuery
     gulp.src([
         './node_modules/jquery/dist/*',
         '!./node_modules/jquery/dist/core.js'
     ])
         .pipe(gulp.dest('./vendor/jquery'));
+
     // jQuery Easing
     gulp.src([
         './node_modules/jquery.easing/*.js'
     ])
-        .pipe(gulp.dest('./vendor/jquery-easing'))
+        .pipe(gulp.dest('./vendor/jquery-easing'));
+
+    // Material Design for Bootstrap
+    gulp.src([
+        './node_modules/mdbootstrap/**/*'
+    ])
+        .pipe(gulp.dest('./vendor/mdbootstrap'));
+
+    // snap.svg
+    gulp.src([
+        './node_modules/snapsvg/dist/*.js'
+    ])
+        .pipe(gulp.dest('./vendor/snapsvg'));
 });
 // Compile SCSS
 gulp.task('css:compile', function () {
@@ -86,14 +104,14 @@ gulp.task('css', ['css:compile', 'css:minify']);
 // Minify JavaScript
 gulp.task('js:minify', function () {
     return gulp.src([
-        './js/*.js',
-        '!./js/*.min.js'
+        './assets/js/*.js',
+        '!./assets/js/*.min.js'
     ])
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./js'))
+        .pipe(gulp.dest('./assets/js'))
         .pipe(browserSync.stream());
 });
 // JS
@@ -118,8 +136,17 @@ gulp.task('browserSync', function () {
         }
     });
 });
+
 // Dev task
 gulp.task('dev', ['css', 'js', 'pug', 'browserSync'], function () {
+    gulp.watch('./src/pug/**/*', ['pug']);
+    gulp.watch('./src/scss/**/*.scss', ['css']);
+    gulp.watch('./assets/js/*.js', ['js']);
+    gulp.watch('./*.html', browserSync.reload);
+});
+
+// Dev demo
+gulp.task('dev', ['css', 'pug', 'browserSync'], function () {
     gulp.watch('./src/pug/**/*', ['pug']);
     gulp.watch('./src/scss/**/*.scss', ['css']);
     gulp.watch('./assets/js/*.js', ['js']);
