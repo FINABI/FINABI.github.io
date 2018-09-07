@@ -20,12 +20,59 @@ html(lang='en')
             .FN_header-img
             .FN_header-title
                 .text-center
-                    | FINA Business Analytics
-            .FN_header-text.text-justify
+                    | FinA Business Analytics
+            //.FN_header-text.text-justify
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        h1.section-title.text-center Key Features
-        .container-fluid.FN_indexp-bullets
+        h1.section-title.text-center FinA BI
+        .container-fluid#FN_main-component
             .row
+                .col-lg-4
+                    a(href="http://fina2.net/" target="_blank")
+                        .FN_main-component-item.text-center.pt-5
+                            .FN_comp-icon
+                                i.fa.fa-info
+                            .FN_comp_title About Us
+                            .FN_comp_underline
+                .col-lg-4
+                    a(href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank")
+                        .FN_main-component-item.text-center.pt-5
+                            .FN_comp-icon
+                                i.fa.fa-book
+                            .FN_comp_title Docs
+                            .FN_comp_underline
+                .col-lg-4
+                    a(href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank")
+                        .FN_main-component-item.text-center.pt-5
+                            .FN_comp-icon
+                                i.fa.fa-cog
+                            .FN_comp_title
+                                span Service
+                            .FN_comp_underline
+                .col-lg-4
+                    a(href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank")
+                        .FN_main-component-item.text-center.pt-5
+                            .FN_comp-icon
+                                i.fa.fa-file-code-o
+                            .FN_comp_title
+                                .some Code
+                            .FN_comp_underline
+                .col-lg-4
+                    a(href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank")
+                        .FN_main-component-item.text-center.pt-5
+                            .FN_comp-icon
+                                i.fa.fa-file-code-o
+                            .FN_comp_title Docs
+                            .FN_comp_underline
+                .col-lg-4
+                    a(href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank")
+                        .FN_main-component-item.text-center.pt-5
+                            .FN_comp-icon
+                                i.fa.fa-file-code-o
+                            .FN_comp_title Docs
+                            .FN_comp_underline
+
+        .container-fluid.FN_indexp-bullets
+            //.row
                 .col-12
                 .col-lg-4.mt-5
                     .card.h-100
@@ -77,7 +124,7 @@ html(lang='en')
                                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
         include includes/footer.pug
 
-        include includes/scroll-to-top.pug
+        //include includes/scroll-to-top.pug
 
         include includes/modals/logout.pug
 
