@@ -12,72 +12,148 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Ruda|Oswald|Ubuntu" rel="stylesheet">
     <!-- Material Design Bootstrap-->
     <link href="vendor/mdbootstrap/css/mdb.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
     <link href="assets/css/fina.bi.css" rel="stylesheet">
 </head>
 
-<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+<body>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav"><a class="navbar-brand" href="index.html">FinA Business Analytics</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav"><a class="navbar-brand" href="index.html">FINA Business Analytics</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div
             class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="About Us"><a class="nav-link" href="index.html"><i class="fa fa-fw fa-info"></i><span class="nav-link-text">&nbsp;About Us</span></a></li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Services"><a class="nav-link" href="index.html"><i class="fa fa-fw fa-cog"></i><span class="nav-link-text">&nbsp; Services</span></a></li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Contact Us"><a class="nav-link" href="index.html"><i class="fa fa-fw fa-phone"></i><span class="nav-link-text">&nbsp; Contact Us</span></a></li>
-            </ul>
-            <ul class="navbar-nav sidenav-toggler">
-                <li class="nav-item"><a class="nav-link text-center" id="sidenavToggler"><i class="fa fa-fw fa-angle-left"></i></a></li>
-            </ul>
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="About Us"><a class="nav-link" href="about.html"><i class="fa fa-fw fa-info"></i><span class="nav-link-text">&nbsp;About Us</span></a></li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Services"><a class="nav-link" href="index.html"><i class="fa fa-fw fa-cog"></i><span class="nav-link-text">&nbsp; Services</span></a></li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documentation"><a class="nav-link" href="documentation.html"><i class="fa fa-fw fa-book"></i><span class="nav-link-text">&nbsp; Documentation</span></a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-fw fa-comment-o"></i>&nbsp; support</a></li>
             </ul>
             </div>
     </nav>
-    <div class="content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8"><svg id="svg"></svg></div>
-                <div class="col-2"></div>
-            </div>
+    <div id="header">
+        <div class="FN_header-img"></div>
+        <div class="FN_header-title">
+            <div class="text-center">FINA Business Analytics</div>
         </div>
-        <!-- /.container-fluid-->
-        <!-- /.content-wrapper-->
-        <footer class="sticky-footer">
-            <div class="container">
-                <div class="text-center"><small>Copyright © FINA LLC 2018</small></div>
+        <div class="FN_header-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in</div>
+    </div>
+    <h1 class="section-title text-center">Key Features</h1>
+    <div class="container-fluid FN_indexp-bullets">
+        <div class="row">
+            <div class="col-12"></div>
+            <div class="col-lg-4 mt-5">
+                <div class="card h-100">
+                    <div class="hexagon"></div>
+                    <div class="vl"></div>
+                    <div class="circle"></div>
+                    <div class="hexagon-text"><i class="fa fa-globe" style="color:white; font-size:25px"></i></div>
+                    <div>
+                        <div style="padding:10px 15px 10px calc(50px + 3vw);">
+                            <div class="FN_title">Web Based Analysis</div>
+                            <div class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-        <!-- Scroll to Top Button--><a class="scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to start?</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                    <div class="modal-body">Coming Soon!</div>
-                    <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button><a class="btn btn-primary" href="index.html">Start</a></div>
+            <div class="col-lg-4 mt-5">
+                <div class="card h-100">
+                    <div class="hexagon"></div>
+                    <div class="vl"></div>
+                    <div class="circle"></div>
+                    <div class="hexagon-text"><i class="fa fa-plane" style="color:white; font-size:25px"></i></div>
+                    <div>
+                        <div style="padding:10px 15px 10px calc(50px + 3vw);">
+                            <div class="FN_title">Analyse Data From Anywhere</div>
+                            <div class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+                <div class="card h-100">
+                    <div class="hexagon"></div>
+                    <div class="vl"></div>
+                    <div class="circle"></div>
+                    <div class="hexagon-text"><i class="fa fa-rocket" style="color:white; font-size:25px"></i></div>
+                    <div>
+                        <div style="padding:10px 15px 10px calc(50px + 3vw);">
+                            <div class="FN_title">Dynamic Visualisations</div>
+                            <div class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+                <div class="card h-100">
+                    <div class="hexagon"></div>
+                    <div class="vl"></div>
+                    <div class="circle"></div>
+                    <div class="hexagon-text"><i class="fa fa-line-chart" style="color:white; font-size:25px"></i></div>
+                    <div>
+                        <div style="padding:10px 15px 10px calc(50px + 3vw);">
+                            <div class="FN_title">Data Analysis</div>
+                            <div class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- JQuery-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <!-- Bootstrap tooltips-->
-        <script src="vendor/mdbootstrap/js/popper.min.js"></script>
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-        <!--MDB core JavaScript-->
-        <script src="vendor/mdbootstrap/js/mdb.js"></script>
-        <!--snap.svg-->
-        <script src="vendor/snapsvg/snap.svg.js"></script>
-        <!-- Custom scripts for all pages-->
-        <script src="assets/js/fina.bi.js"></script>
     </div>
+    <footer class="mt-5">
+        <div class="container">
+            <div class="text-center"><small>Copyright © FINA LLC 2018</small></div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button--><a class="scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to start?</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">Coming Soon!</div>
+                <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button><a class="btn btn-primary" href="index.html">Start</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- JQuery-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tooltips-->
+    <script src="vendor/mdbootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!--MDB core JavaScript-->
+    <script src="vendor/mdbootstrap/js/mdb.js"></script>
+    <!--jQuery-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!--snap.svg-->
+    <script src="vendor/snapsvg/snap.svg.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="assets/js/fina.bi.js"></script>
+    <script type="text/javascript">
+        let nav = document.querySelector("#mainNav");
+
+        (function() {
+            nav.setAttribute('style', 'background-color:transparent !important;');
+        })()
+
+        window.onscroll = function() {
+            if (window.pageYOffset < 100) {
+                nav.setAttribute('style', 'background-color:transparent !important;');
+            } else {
+                nav.setAttribute('style', '');
+            }
+        }
+    </script>
 </body>
 
 </html>

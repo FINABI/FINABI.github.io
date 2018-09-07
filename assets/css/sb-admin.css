@@ -418,6 +418,24 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   }
 }
 
+.importantRed {
+  background: transparent !important;
+}
+
+.importantblue {
+  background: transparent !important;
+}
+
+#mainNav {
+  font-size: 50px !important;
+  color: #a028bf !important;
+}
+
+#mainNav .navbar-brand {
+  font-size: 50px !important;
+  color: #a028bf !important;
+}
+
 .card-body-icon {
   position: absolute;
   z-index: 0;

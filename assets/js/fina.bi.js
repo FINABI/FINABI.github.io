@@ -1,4 +1,4 @@
-(function ($) {
+/*(function ($) {
     "use strict"; // Start of use strict
     // Configure tooltips for collapsed side navigation
     $('.navbar-sidenav [data-toggle="tooltip"]').tooltip({
@@ -25,27 +25,7 @@
         e.preventDefault();
     });
 
-    // Scroll to top button appear
-    $(document).scroll(function () {
-        const scrollDistance = $(this).scrollTop();
-        if (scrollDistance > 100) {
-            $('.scroll-to-top').fadeIn();
-        } else {
-            $('.scroll-to-top').fadeOut();
-        }
-    });
 
-    // Configure tooltips globally
-    $('[data-toggle="tooltip"]').tooltip();
-
-    // Smooth scrolling using jQuery easing
-    $(document).on('click', 'a.scroll-to-top', function (event) {
-        const $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top)
-        }, 1000, 'easeInOutExpo');
-        event.preventDefault();
-    });
 
 
     const g = Snap("#svg");
@@ -127,4 +107,27 @@
         };
     });
 
-})(jQuery); // End of use strict
+})(jQuery); // End of use strict*/
+
+
+// Scroll to top button appear
+$(document).scroll(function () {
+    const scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+        $('.scroll-to-top').fadeIn();
+    } else {
+        $('.scroll-to-top').fadeOut();
+    }
+});
+
+// Configure tooltips globally
+//$('[data-toggle="tooltip"]').tooltip();
+
+// Smooth scrolling using jQuery easing
+$(document).on('click', 'a.scroll-to-top', function (event) {
+    const $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: ($($anchor.attr('href')).offset().top)
+    }, 1000, 'easeInOutExpo');
+    event.preventDefault();
+});

@@ -152,3 +152,20 @@ gulp.task('dev', ['css', 'pug', 'browserSync'], function () {
     gulp.watch('./assets/js/*.js', ['js']);
     gulp.watch('./*.html', browserSync.reload);
 });
+
+
+// rebuild mdbootstrap color theme
+gulp.task('rebuildmdb', function () {
+    return gulp.src('./vendor/mdbootstrap/scss/**/*.scss')
+        .pipe(sass.sync({
+            outputStyle: 'expanded'
+        }).on('error', sass.logError))
+        .pipe(gulp.dest('./vendor/mdbootstrap//css'))
+});
+
+// no browser sync
+gulp.task('watch', ['css', 'pug'], function () {
+    gulp.watch('./src/pug/**/*', ['pug']);
+    gulp.watch('./src/scss/**/*.scss', ['css']);
+   // gulp.watch('./assets/js/*.js', ['js']);
+});

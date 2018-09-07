@@ -14,24 +14,90 @@ html(lang='en')
 
         include includes/css/custom.pug
 
-    body#page-top.fixed-nav.sticky-footer.bg-dark
+    body
         include includes/navbar.pug
-        .content-wrapper
-            .container-fluid
-                .row
-                    .col-2
-                    .col-8
-                        svg(id='svg')
-                    .col-2
-            // /.container-fluid
-            // /.content-wrapper
+        #header
+            .FN_header-img
+            .FN_header-title
+                .text-center
+                    | FINA Business Analytics
+            .FN_header-text.text-justify
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        h1.section-title.text-center Key Features
+        .container-fluid.FN_indexp-bullets
+            .row
+                .col-12
+                .col-lg-4.mt-5
+                    .card.h-100
+                        .hexagon
+                        .vl
+                        .circle
+                        .hexagon-text
+                            i.fa.fa-globe(style="color:white; font-size:25px")
+                        div
+                            div(style="padding:10px 15px 10px calc(50px + 3vw);")
+                                .FN_title Web Based Analysis
+                                .text-justify
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                .col-lg-4.mt-5
+                    .card.h-100
+                        .hexagon
+                        .vl
+                        .circle
+                        .hexagon-text
+                            i.fa.fa-plane(style="color:white; font-size:25px")
+                        div
+                            div(style="padding:10px 15px 10px calc(50px + 3vw);")
+                                .FN_title Analyse Data From Anywhere
+                                .text-justify
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                .col-lg-4.mt-5
+                    .card.h-100
+                        .hexagon
+                        .vl
+                        .circle
+                        .hexagon-text
+                            i.fa.fa-rocket(style="color:white; font-size:25px")
+                        div
+                            div(style="padding:10px 15px 10px calc(50px + 3vw);")
+                                .FN_title Dynamic Visualisations
+                                .text-justify
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                .col-lg-4.mt-5
+                    .card.h-100
+                        .hexagon
+                        .vl
+                        .circle
+                        .hexagon-text
+                            i.fa.fa-line-chart(style="color:white; font-size:25px")
+                        div
+                            div(style="padding:10px 15px 10px calc(50px + 3vw);")
+                                .FN_title Data Analysis
+                                .text-justify
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        include includes/footer.pug
 
-            include includes/footer.pug
+        include includes/scroll-to-top.pug
 
-            include includes/scroll-to-top.pug
+        include includes/modals/logout.pug
 
-            include includes/modals/logout.pug
+        include includes/js/core.pug
 
-            include includes/js/core.pug
+        include includes/js/custom.pug
+        script(type="text/javascript").
+            let nav = document.querySelector("#mainNav");
 
-            include includes/js/custom.pug
+            (function () {
+                nav.setAttribute('style', 'background-color:transparent !important;');
+            })()
+
+            window.onscroll = function () {
+                if (window.pageYOffset < 100) {
+                    nav.setAttribute('style', 'background-color:transparent !important;');
+                }
+                else {
+                    nav.setAttribute('style', '');
+                }
+            }
+
+
