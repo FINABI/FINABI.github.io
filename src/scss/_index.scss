@@ -2,11 +2,11 @@
   .FN_header-title{
     color: white;
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: calc(1.1rem + 3vw);
 
     z-index: 3;
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
 
     width: 100%;
 
@@ -59,53 +59,6 @@
 @keyframes text-show-animation {
   from {opacity: 0;}
   to {opacity: 1;}
-}
-
-.hexagon {
-  z-index: 2;
-  margin-top: -20px;
-  margin-left: 1.5vw;
-  position: absolute;
-
-  width: 50px;
-  height: 28.87px;
-  background-color: #FF0000;
-  color: white;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 14.43px solid #FF0000;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 14.43px solid #FF0000;
-}
-
-.vl{
-  z-index: 2;
-  position: absolute;
-  border-left: 4px solid #FF0000;
-  height: 100px;
-  margin-left: calc(23px + 1.5vw);
-}
-
-.hexagon-text{
-  z-index: 3;
-  position: absolute;
-  margin-top: -19px;
-  margin-left: calc(12px + 1.5vw);
 }
 
 .section-title{
@@ -181,5 +134,11 @@
     .FN_comp_title{
       font-size: 40px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .FN_comp_underline{
+    width: 16vw!important;
   }
 }
