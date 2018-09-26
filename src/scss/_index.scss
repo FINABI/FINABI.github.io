@@ -28,7 +28,7 @@
     width: 400px;
     padding: 10px;
     border-radius: 0.2em;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(129, 0, 38, 0.5);
 
     animation-name: text-show-animation;
     animation-duration: 2s;
@@ -65,7 +65,7 @@
   color: white;
   font-weight: bold;
   padding: 10px 0;
-  background-color: #ff0000;
+  background-color: #810026;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin-bottom: 0;
   z-index: 1;
@@ -79,7 +79,7 @@
   .FN_title{
     font-size: 1rem;
     font-weight:bold;
-    color:red;
+    color:#810026;
   }
 
   .text-justify{
@@ -99,13 +99,13 @@
   .FN_main-component-item{
     height: 300px;
 
-    border:solid red 1px;
+    border:solid $main-color 1px;
 
     background-color: white;
-    color: #e83228;
+    color: $main-color;
 
     &:hover{
-      background-color: #E83228;
+      background-color: $main-color;
       color: white;
       .FN_comp_underline{
         background-color: white;
@@ -125,7 +125,7 @@
     .FN_comp_underline{
       width: 8vw;
       height: 6px;
-      background-color: #E83228;
+      background-color: #810026;
       border-radius: 0.4rem;
       margin: auto;
       transition: transform .2s;
