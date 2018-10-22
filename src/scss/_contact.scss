@@ -1,5 +1,5 @@
 #contact-page-details{
-  background-color: #810026;
+  background-color: $main-color;
   padding-top: 10px;
 }
 
@@ -45,7 +45,7 @@
     color: rgba(0, 0, 0, 0.75);
   }
   hr{
-    background-color: #810026
+    background-color: $main-color;
   }
 }
 
@@ -57,7 +57,7 @@
   padding-top: calc(580px + 6vh)!important;
 }
 
-.some-cont2{
+.contact-box{
   position: absolute;
   z-index: 1;
 }
@@ -73,4 +73,14 @@
 #contact-map{
   margin-top: 100px!important;
   height: 80vh!important;
+}
+
+.BI_contact_info_img{
+  font-size:35px;
+  color:$main-color;
+}
+
+.BI_contact_info_text{
+  font-weight:bold;
+  color: $main-color;
 }

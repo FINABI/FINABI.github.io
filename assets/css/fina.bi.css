@@ -18,7 +18,7 @@
   position: absolute;
   bottom: 45%;
   width: 100%;
-  text-shadow: 0 3px 6px rgba(255, 0, 0, 0.16), 0 3px 6px rgba(255, 0, 0, 0.24);
+  text-shadow: 0 3px 6px rgba(123, 125, 126, 0.16), 0 3px 6px rgba(123, 125, 126, 0.24);
   animation-name: text-show-animation;
   animation-duration: 2s;
 }
@@ -33,7 +33,7 @@
   width: 400px;
   padding: 10px;
   border-radius: 0.2em;
-  background-color: rgba(129, 0, 38, 0.5);
+  background-color: rgba(123, 125, 126, 0.5);
   animation-name: text-show-animation;
   animation-duration: 2s;
 }
@@ -71,7 +71,7 @@
   color: white;
   font-weight: bold;
   padding: 10px 0;
-  background-color: #810026;
+  background-color: #7B7D7E;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin-bottom: 0;
   z-index: 1;
@@ -83,7 +83,7 @@
 .FN_indexp-bullets .FN_title {
   font-size: 1rem;
   font-weight: bold;
-  color: #810026;
+  color: #505152;
 }
 
 .FN_indexp-bullets .text-justify {
@@ -101,13 +101,13 @@
 
 #FN_main-component .FN_main-component-item {
   height: 300px;
-  border: solid #810026 1px;
+  border: solid #505152 1px;
   background-color: white;
-  color: #810026;
+  color: #505152;
 }
 
 #FN_main-component .FN_main-component-item:hover {
-  background-color: #810026;
+  background-color: #505152;
   color: white;
 }
 
@@ -130,7 +130,7 @@
 #FN_main-component .FN_main-component-item .FN_comp_underline {
   width: 8vw;
   height: 6px;
-  background-color: #810026;
+  background-color: #505152;
   border-radius: 0.4rem;
   margin: auto;
   transition: transform .2s;
@@ -176,7 +176,7 @@ footer{
 }
 */
 footer {
-  background-color: #810026;
+  background-color: #505152;
 }
 
 footer small {
@@ -184,7 +184,7 @@ footer small {
 }
 
 #contact-page-details {
-  background-color: #810026;
+  background-color: #505152;
   padding-top: 10px;
 }
 
@@ -229,7 +229,7 @@ footer small {
 }
 
 .contact-right-side hr {
-  background-color: #810026;
+  background-color: #505152;
 }
 
 .map-padding {
@@ -240,7 +240,7 @@ footer small {
   padding-top: calc(580px + 6vh) !important;
 }
 
-.some-cont2 {
+.contact-box {
   position: absolute;
   z-index: 1;
 }
@@ -257,4 +257,114 @@ footer small {
 #contact-map {
   margin-top: 100px !important;
   height: 80vh !important;
+}
+
+.BI_contact_info_img {
+  font-size: 35px;
+  color: #505152;
+}
+
+.BI_contact_info_text {
+  font-weight: bold;
+  color: #505152;
+}
+
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.hvrbox * {
+  box-sizing: border-box;
+}
+
+.hvrbox img {
+  max-width: 100%;
+}
+
+.hvrbox .hvrbox-layer_bottom {
+  display: block;
+}
+
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(123, 125, 126, 0.8);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.hvrbox .hvrbox-text_mobile {
+  font-size: 13px;
+  border-top: 1px solid #b3b3b3;
+  /* for old browsers */
+  border-top: 1px solid rgba(179, 179, 179, 0.7);
+  margin-top: 5px;
+  padding-top: 2px;
+  display: none;
+}
+
+.hvrbox .active .hvrbox-layer_slideup {
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hvrbox .active .hvrbox-text_mobile {
+  display: block;
+}
+
+.hvrbox .active .hvrbox-layer_top {
+  opacity: 1;
+}
+
+.hvrbox .hvrbox-layer_slideup {
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.hvrbox:hover .hvrbox-layer_slideup {
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hvrbox:hover .hvrbox-layer_top {
+  opacity: 1;
+}
+
+.hvrbox .hvrbox-text {
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.client-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
